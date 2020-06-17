@@ -1,0 +1,94 @@
+.button-wrap {}
+
+@media (max-width: 40em) {
+    .button-wrap {
+        margin-top: -1.5em;
+    }
+}
+
+.appointments_listing {
+    margin-bottom: 20px;
+}
+
+.button-label {
+    display: inline-block;
+    padding: 1em 2em;
+    margin: 0.5em;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 0.25em;
+    
+    transition: 0.3s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.no-button{
+    background: #c21b15;
+}
+.yes-button{
+    background: #2ECC71;
+}
+
+.button-label h1 {
+    font-size: 1em;
+    margin-bottom: 0px;
+}
+
+.button-label:hover {
+    background: #28B463;
+    color: #fff;
+}
+
+.button-label:active {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+@media (max-width: 40em) {
+    .button-label {
+        padding: 0em 1em 3px;
+        margin: 0.25em;
+    }
+}
+
+:checked+.button-label {
+    background: #4183D7;
+    color: #efefef;
+}
+
+:checked+.button-label:hover {
+    background: #2E86C1;
+    color: #e2e2e2;
+}
+
+#no-button:checked+.button-label {
+    background: #D91E18;
+    color: #efefef;
+}
+
+.no-button {
+    background: #c21b15;
+    color: #e2e2e2;
+}
+
+#no-button:checked+.button-label:hover {
+    background: #c21b15;
+    color: #e2e2e2;
+}
+
+#maybe-button:checked+.button-label {
+    background: #4183D7;
+    color: #efefef;
+}
+
+#maybe-button:checked+.button-label:hover {
+    background: #2c75d2;
+    color: #e2e2e2;
+}
+
+.hidden {
+    display: none;
+}
